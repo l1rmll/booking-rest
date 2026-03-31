@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-SemiBold.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: 'Poppins', 'Poppins-SemiBold', Arial, Helvetica, sans-serif;
+    background: #fbfbfb;
+    margin: 0;
+    font-style: normal;
+}
+
+.top-header {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    text-align: right;
+}
+
+
+.container-top-header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 138px;
+    color: white;
+}
+
+.top-text.shop {
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.shop a {
+    font-weight: bold;
+    color: white;
+}
+
+.shop a:hover {
+    color: #e93a3a;
+    text-decoration: underline;
+}
+
+.p {
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.lang {
+    background: black;
+    color: white;
+    border: none;
+    text-align: right;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    background: #000000;
+}
+
+.container.header-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.actions img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.like {
+    width: 16px;
+    height: 18px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    line-height: 24px;
+    font-size: 16px;
+    display: block;
+    color: #000;
+
+}
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #e93a3a;
+    text-decoration: underline;
+}
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+
+.search-box {
+    position: relative;
+    margin-right: 20px;
+}
+
+.search-box input {
+    padding: 8px 35px 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+
+.icons i {
+    margin-left: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    color: #ff4d4d;
+}
+
+
+
+.main {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+}
+
+.sidebar ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+.sidebar li {
+    padding: 10px 0;
+}
+
+.sidebar li:hover {
+    color: #e93a3a;
+}
+
+.banner {
+    background-color: #000;
+    margin-left: 10px;
+    position: left 182;
+}
+
+.banner img {
+
+    margin-right: 10px;
+    text-align: right;
+    margin-left: 10px;
+}
+
+.banner-text {
+    color: white;
+    font-size: 12px;
+}
