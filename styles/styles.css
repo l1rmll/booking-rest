@@ -13,7 +13,7 @@
 }
 
 font-face {
-    font-family: 'Regular';
+    font-family: 'Poppins-Regular';
     src: url(../fonts/collapen_.otf);
     font-weight: 200;
     font-style: normal;
@@ -205,23 +205,109 @@ body {
 }
 
 .banner {
+    flex:1;
     background-color: #000;
+    color:white;
     margin-left: 10px;
     position: left 182;
+    padding:40px;
+    display:flex;
+    align-items:center;
+    
 }
 
 .banner img {
-
+    display: flex;
     margin-right: 10px;
     text-align: right;
     margin-left: 10px;
 }
-
+.banner-text h1{
+    margin:10px 0;
+}
 .banner-text {
     color: white;
     font-size: 12px;
 }
+.banner button{
+    padding:10px 20px;
+    background: transparent;
+    border: 1px solid white;
+    color:white;
+    cursor:pointer;
 
+}
+.flash{
+    padding: 40px 50px;
+    
+}
+ .products{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+ }
+ .card{
+    width: 200px;
+    border: 1px solid #eee;
+    padding:15px;
+    text-align: center;
+ }
+ .card img{
+    width:100%;
+ }
+ .categories{
+    display: flex;
+ }
+
+ .category{
+    display: flex;
+    gap:20px;
+    margin-top: 20px;
+    text-align: center;
+ }
+ 
+ .icon{
+    width: 100px;
+    border: 1px solid #eee;
+    padding:15px;
+    text-align: center;
+    justify-content: space-between;
+    
+ }
+.icon img{
+    width: 100%;
+}
+
+.clothes{
+    display: flex;
+    gap:20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.clothes p{
+    text-decoration: line-through;
+}
+.things img{
+     width: 200px;
+    border: 1px solid #eee;
+    padding:15px;
+    text-align: center;
+ }
+    
+
+
+.things{
+    width: 100px;
+    
+    padding:15px;
+    text-align: center;
+    justify-content: space-between;
+    
+ }
+.things img{
+    width: 100%;
+}
 .footer {
     font-family: 'Regular';
     background-color: #000;
