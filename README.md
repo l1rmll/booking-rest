@@ -1,3 +1,3 @@
 # студентка:Махнёва Рукмина
 - Группа Си-15
-- https://www.figma.com/design/FuffGD4DD5noKjFv5mhAV3/Online-Restaurant-Reservation-System--Community-?node-id=0-1&p=f&t=sk11frtADZPbNV1p-0
+- https://www.figma.com/design/CKkg5Ug3cxS0sOOHMWyKMH/Full-E-Commerce-Website-UI-UX-Design--Community-?m=auto&t=ahdRw6MG5a1h4qJz-6
