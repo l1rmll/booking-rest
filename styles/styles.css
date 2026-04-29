@@ -216,14 +216,14 @@ body {
     width: 900px;
     margin-left: 30px;
     margin-top: 30px;
-    position: left 182;
+    position: left 182px;
     padding: 4px;
     align-items: center;
 
 }
 
 .banner img {
-    margin: 20px;
+    margin: auto;
     display: flex;
     margin-right: 10px;
     text-align: left;
@@ -284,43 +284,49 @@ body {
     background: #aaa;
     border-radius: 50%;
     margin: 0 4px;
+   
 }
-
+.carusel-dots span:hover{
+     transform: scale(1.1);
+}
 .carusel-dots active {
     background: #e11d48;
 }
 
 .flash {
+    margin-top: 30px;
     display: inline-block;
 
 }
 
 .products {
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
-    padding: 20px;
     margin: 10px;
 }
 
 .card {
-    width: 300px;
-    margin: 20px;
+    margin: 40px;
     text-align: left;
     padding: 15px;
-
+    font-size: 34px;
+    text-align: left;
 }
 
 .card img {
+    margin:40px;
     height: 350px;
-    width: 300px;
+    width: 450px;
     border: 1px solid #eee;
-    padding: 15px;
+    padding: 45px;
     object-fit: contain;
     background-color: rgb(236, 236, 236);
     transition: 0.3s;
 }
-
+.card img:hover{
+    transform: scale(1.1);
+}
 .button {
     width: 234px;
     height: 56px;
@@ -330,10 +336,11 @@ body {
     justify-content: center;
     border-radius: 7px;
     padding: 10px;
-    margin-top: auto;
-    margin-bottom: 70px;
+    margin-top: 150px;
+    margin-bottom: 90px;
     background-color: #db4444;
     color: white;
+     transition: 0.3s;
 }
 
 .button:hover {
@@ -352,23 +359,27 @@ body {
 }
 
 .icon {
-    width: 170px;
-    height: 145px;
-    border: 1px solid #eee;
-    padding: 15px;
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+    padding: 20px;
+    font-size: 34px;
     text-align: center;
-    justify-content: space-between;
-    margin: 10px;
+    border: 1px solid #eee;
 }
 
 .icon:hover {
     background-color: #db4444;
     color: white;
+    transition: 0.3s;
 }
 
 .icon img {
+    padding: auto;
     width: 50%;
     position: center;
+    
+     
 }
 
 .button2 {
@@ -384,6 +395,7 @@ body {
     margin-top: auto;
     margin-bottom: 70px;
     color: white;
+     transition: 0.3s;
 }
 
 .button2:hover {
@@ -394,6 +406,7 @@ body {
     display: flex;
     margin-top: 20px;
     text-align: center;
+    margin-bottom: 110px;
 }
 
 .clothes p {
@@ -402,9 +415,13 @@ body {
 
 .things {
     width: 300px;
-    margin: 10px;
+    height: 600px;
+    width: 400px;
+    margin: 40px;
     text-align: left;
     padding: 15px;
+    font-size: 34px;
+    text-align: left;
 }
 
 .things img {
@@ -412,23 +429,30 @@ body {
     height: 350px;
     width: 300px;
     border: 1px solid #eee;
-    padding: 15px;
+    padding: 45px;
     object-fit: contain;
     background-color: rgb(236, 236, 236);
-    width: 100%;
+    width: 100%; 
+    transition: 0.3s;
 }
 
+.things img:hover{
+    transform: scale(1.1);
+}
 .banner-column {
     background-color: #000;
     margin: 40px 0 40px 40px;
-    height: 500px;
-    width: 1170px;
+    height: 550px;
+    width: 1570px;
+    margin-top: 110px;
+    margin-bottom: 110px;
 }
 
 .column {
     color: white;
     display: flex;
     justify-content: left;
+    gap: 30px;
 }
 
 
@@ -439,6 +463,7 @@ body {
     text-align: left;
     margin-left: 10px;
     justify-content: right;
+    
 }
 
 .button3 {
@@ -446,8 +471,8 @@ body {
     height: 56px;
     background-color: #00ff66;
     margin-left: 56px;
-    margin-bottom: 69px;
-
+    margin-bottom: 49px;
+    transition: 0.3s;
 }
 
 .button3:hover {
@@ -455,6 +480,7 @@ body {
 }
 
 .explore-product {
+    margin: 35px;
     display: flex;
     margin-top: 20px;
     flex-wrap: wrap;
@@ -462,16 +488,13 @@ body {
 
 .cards {
     width: 300px;
-    margin: 10px;
+    height: 600px;
+    width: 400px;
+    margin: 40px;
     text-align: left;
     padding: 15px;
-}
-
-.cards1 {
-    width: 300px;
-    margin: 10px;
+    font-size: 34px;
     text-align: left;
-    padding: 15px;
 }
 
 .cards img {
@@ -479,32 +502,24 @@ body {
     height: 350px;
     width: 300px;
     border: 1px solid #eee;
-    padding: 15px;
+    padding: 45px;
     object-fit: contain;
     background-color: rgb(236, 236, 236);
     width: 100%;
+    transition: 0.3s;
 }
 
-.cards1 img {
-    position: relative;
-    height: 350px;
-    width: 300px;
-    border: 1px solid #eee;
-    padding: 15px;
-    object-fit: contain;
-    background-color: rgb(236, 236, 236);
-    width: 100%;
+.cards img:hover{
+    transform: scale(1.1);
 }
 
-.our-products {
-    width: 200px;
-    border: 1px solid #eee;
-    padding: 15px;
-    text-align: center;
-}
 
-.our-products img {
-    width: 100%;
+.new-arrial{
+    margin: auto;
+    display: grid;
+    grid-template-rows: 500px 400px ;
+    grid-template-columns: 400px 300px 300px;
+    grid-area: auto;
 }
 
 .delivery {
@@ -514,14 +529,17 @@ body {
 .icons {
     display: inline-block;
     justify-content: center;
-    margin: 30px;
-    padding: 20px;
+    margin: auto;
+    padding: auto;
     text-align: center;
-
+    margin-top:  80px;
+    margin-bottom: 80px;
 }
 
 .icons img {
-    width: 50%;
+    width: 70px;
+    height: 70px;
+    align-items: center;
 }
 
 .footer {
@@ -531,7 +549,6 @@ body {
     padding: 50px 80px;
 
 }
-
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -617,13 +634,15 @@ body {
     gap: 8px;
 }
 
-.socials {
-    margin-top: 10px;
+.socials img:hover{
+    margin:auto;
+    transform: scale(1.1);
 }
 
-.socials {
+.socials{
     margin-right: 10px;
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+    
 }
