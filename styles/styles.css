@@ -14,15 +14,43 @@
 
 font-face {
     font-family: 'Poppins-Regular';
-    src: url(../fonts/collapen_.otf);
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-weight: 200;
+    font-style: normal;
+}
+
+font-face {
+    font-family: 'Poppins-Medium';
+    src: url(../fonts/Poppins-Medium.ttf);
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url(#);
-    font-weight: 200;
+    font-family: 'Inter-bold';
+    src: url(../fonts/Inter_18pt-Bold.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-black';
+    src: url(../fonts/Inter_24pt-Black.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-medium';
+    src: url(../fonts/Inter_18pt-Medium.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-regular';
+    src: url(../fonts/Inter_24pt-Regular.ttf);
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -32,12 +60,12 @@ font-face {
 
 
 body {
-    font-family: 'Poppins', 'Poppins-SemiBold', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', 'Poppins-SemiBold', 'Poppins-Regular', 'Inter-black', 'Inter-medium', 'Inter-bold', 'Inter-regular', Arial, Helvetica, sans-serif;
     background: #fbfbfb;
     width: 1440px;
-    margin: 0;
+    margin: auto;
     font-style: normal;
-
+    border: 1px solid #eee;
 }
 
 .top-header {
@@ -54,7 +82,6 @@ body {
 }
 
 .container-top-header-content {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,14 +90,14 @@ body {
 }
 
 .top-text.shop {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 21px;
     text-align: center;
     cursor: pointer;
     width: 100%;
 }
 
 .shop a {
-    font-weight: bold;
     color: white;
 }
 
@@ -79,12 +106,6 @@ body {
     text-decoration: underline;
 }
 
-.p {
-    font-size: 12px;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-}
 
 .lang {
     align-items: end;
@@ -108,24 +129,53 @@ body {
     justify-content: space-between;
 }
 
+.actions {
+    position: relative;
+    width: 347px;
+    height: 38px;
+    margin-top: 40px;
+    margin-right: 135px;
+    margin-left: 148px;
+    margin-bottom: 16px;
+}
+
+.search-box input {
+    box-sizing: border-box;
+}
+
+input[type="search-box"] {
+    width: 243px;
+    height: 38px;
+    padding: 7px 12px 7px 20px;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 1px;
+
+}
+
+.search-box txt {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    transform: translateY(-90%);
+    width: 18px;
+    height: 18px;
+    stroke: #9e7f7f;
+    fill: none;
+    stroke-width: 1;
+
+}
+
+
 .actions img {
     width: 20px;
     height: 20px;
-    margin-left: 10px;
-    cursor: pointer;
-}
 
-.like {
-    width: 16px;
-    height: 18px;
-    margin-left: 8px;
-    cursor: pointer;
-}
-
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    margin-left: 135px;
 }
 
 .main-header {
@@ -133,11 +183,13 @@ body {
 }
 
 .menu {
+    width: 367px;
+    height: 34px;
     line-height: 24px;
     font-size: 16px;
     display: block;
     color: #000;
-
+    margin-left: 190px;
 }
 
 .menu a {
@@ -156,46 +208,18 @@ body {
 
 .header-right {
     display: flex;
-    align-items: center;
-}
 
-
-.search-box {
-    position: relative;
 
 }
-
-.search-box input {
-    padding: 35px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-}
-
-.search-box i {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999;
-}
-
-
-.icons i {
-    margin-left: 15px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.icons i:hover {
-    color: #ff4d4d;
-}
-
 
 
 .main {
     display: flex;
+
+}
+
+.logo {
+    margin-left: 135px;
 
 }
 
@@ -204,21 +228,26 @@ body {
     height: 384px;
     font-size: 16px;
     line-height: 24px;
+    margin-left: 95px;
 
 }
 
 .sidebar ul {
-    margin-top: 0;
-    margin-left: 135px;
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    line-height: 24px;
     width: 217px;
     height: 344px;
+    margin-top: 40px;
     margin-right: 16px;
     list-style: none;
     cursor: pointer;
+
 }
 
 .sidebar li {
-    padding: 10px 0;
+    margin-bottom: 16px;
+
 }
 
 .sidebar li:hover {
@@ -231,24 +260,31 @@ body {
     display: flex;
     background-color: #000;
     color: white;
-    width: 900px;
+    width: 892px;
+    height: 344px;
     margin-left: 30px;
-    margin-top: 30px;
-    position: left 182px;
-    padding: 4px;
+    margin-top: 40px;
+    padding: px;
     align-items: center;
 
 }
 
+.banner-text {
+    width: 396px;
+    margin-left: 128px;
+}
+
 .banner img {
+    width: 100%;
     margin: auto;
     display: flex;
-    margin-right: 10px;
     text-align: left;
-    margin-left: 10px;
+    overflow: hidden;
 }
 
 .banner-text h1 {
+    width: 294px;
+    height: 120px;
     margin: 10px 0;
 
 }
@@ -260,9 +296,10 @@ body {
     text-decoration: none;
 }
 
-.banner-text {
+.banner-text p {
     color: white;
-    font-size: 12px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .banner a:hover {
@@ -280,37 +317,33 @@ body {
 
 }
 
-.dots {
-    width: 200px;
-    height: 150px;
-    background-image: radial-gradient(#888 1px, transparent 1px);
-    background-size: 12px 12px;
-    opacity: 0.3;
-}
-
 .carusel-dots {
+
+    width: 110px;
+    height: 14px;
     position: absolute;
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 11px;
 }
 
 .carusel-dots span {
     display: inline-block;
-    width: 8px;
-    height: 8px;
     background: #aaa;
-    border-radius: 50%;
-    margin: 0 4px;
-
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
 }
 
 .carusel-dots span:hover {
-    transform: scale(1.1);
+    background-color: #db4444;
+    transform: scale(1.5);
+    border: 0.1px solid white;
 }
 
 .carusel-dots active {
-    background: #e11d48;
+    background-color: #e11d48;
 }
 
 .flash {
@@ -323,26 +356,39 @@ body {
     margin-bottom: 80px;
 }
 
+.flash h2 {
+    font-size: 36px;
+    line-height: 48px;
+}
+
 .products {
+    width: 270px;
+    height: 350px;
     margin-top: 103px;
-    width: 1308px;
-    height: 493px;
     display: flex;
     text-align: center;
-    margin-bottom: 60px;
 }
 
 .card {
     margin-right: 30px;
-    font-size: 34px;
+    font-size: 16px;
+    line-height: 24px;
     text-align: left;
 
+}
+
+.card h4 {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #db4444;
 }
 
 .card0 {
     width: 150px;
     height: 100%;
     overflow: hidden;
+    text-align: justify;
 }
 
 .card img {
@@ -368,7 +414,7 @@ body {
     justify-content: center;
     border-radius: 7px;
     padding: 10px;
-    margin-top: 150px;
+    margin-top: 60px;
     margin-bottom: 90px;
     background-color: #db4444;
     color: white;
@@ -397,12 +443,14 @@ body {
 }
 
 .icon {
+    border-radius: 10px;
     margin-top: 60px;
     margin-bottom: 70px;
     width: 170px;
     height: 145px;
     padding: 20px;
     font-size: 16px;
+    gap: 30px;
     text-align: center;
     border: 1px solid #eee;
 }
@@ -433,10 +481,17 @@ body {
     align-items: end;
     justify-content: center;
     border-radius: 7px;
-    padding: 20px;
+    padding: 16px 48px 16px 48px;
     margin-bottom: 60px;
     color: white;
     transition: 0.3s;
+}
+
+.sale h2 {
+    margin-top: 60px;
+    font-size: 36px;
+    line-height: 48px;
+
 }
 
 .button2:hover {
@@ -453,7 +508,10 @@ body {
     margin-right: 135px;
 }
 
-
+.sale p {
+    width: 125px;
+    height: 40px;
+}
 
 .clothes {
     display: flex;
@@ -465,10 +523,12 @@ body {
 }
 
 .things {
+    font-size: 'Poppins-medium';
     width: 270px;
     height: 250px;
     text-align: left;
     font-size: 16px;
+    line-height: 24px;
     text-align: left;
 }
 
@@ -478,8 +538,8 @@ body {
 
 .things img {
     position: relative;
-    height: 180px;
-    width: 190px;
+    height: 250px;
+    width: 270px;
     border: 1px solid #eee;
     padding: 40px 35px 40px 35px;
     object-fit: contain;
@@ -534,8 +594,9 @@ body {
 }
 
 .explore {
+    margin-left: 135px;
     width: 1170px;
-    height: 900px;
+    height: 1016px;
 }
 
 .explore-product {
@@ -543,7 +604,7 @@ body {
     display: flex;
     margin-top: 60px;
     flex-wrap: wrap;
-    margin: 0 135px 0 135px;
+
 }
 
 .cards {
@@ -552,6 +613,8 @@ body {
     font-size: 16px;
     line-height: 24px;
     text-align: left;
+    gap: 16px;
+    margin: 60px 0 0 0;
 }
 
 .cards:not(last-child) {
@@ -578,9 +641,7 @@ body {
 .button4 {
     width: 234px;
     height: 56px;
-    margin: 60px 603px 0 603px;
-    display: block;
-    justify-content: center;
+    margin: 116px 603px 0 468px;
     border-radius: 7px;
     padding: 10px;
     background-color: #db4444;
@@ -593,8 +654,7 @@ body {
 }
 
 .featured {
-    width: 1170px;
-    margin: 0 135px 140px 135px;
+    margin: 0px 135px 140px 135px;
     width: 1170px;
     height: 768px;
 }
@@ -665,7 +725,7 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+
 }
 
 .wide {
@@ -680,6 +740,7 @@ body {
 .bottomss .cardss {
     width: 270px;
     height: 284px;
+    margin-top: 32px;
 }
 
 
