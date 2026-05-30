@@ -235,12 +235,13 @@ body {
     padding: 8px 0;
     cursor: pointer;
     font-size: 15px;
+    transition: 0.3 ease;
 }
 
 .sidebar li:hover {
     text-decoration-color: transparent;
     color: #db4444;
-    transition: 0.3 ease;
+
 }
 
 .banner {
@@ -303,6 +304,7 @@ body {
     background: #555;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.2 ease;
 }
 
 .carusel-dots span.active {
@@ -314,7 +316,7 @@ body {
     background-color: #db4444;
     border: 1px solid white;
     transform: scale(2.1);
-    transition: 0.2 ease;
+
 }
 
 
@@ -422,6 +424,7 @@ body {
     cursor: pointer;
     border-radius: 4px;
     margin-left: 20px;
+    transition: 0.2 ease;
 }
 
 .button {
@@ -442,12 +445,12 @@ body {
 
 .button2:hover {
     transform: scale(1.1);
-    transition: 0.2 ease;
+
 }
 
 .button:hover {
     transform: scale(1.1);
-    transition: 0.2 ease;
+
 }
 
 .button4 {
@@ -463,11 +466,12 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.2 ease;
 }
 
 .button4:hover {
     transform: scale(1.1);
-    transition: 0.2 ease;
+
 }
 
 .products {
@@ -517,7 +521,7 @@ body {
     border-radius: 4px;
 }
 
-.card img{
+.card img {
     width: 270px;
     height: 250px;
 }
@@ -599,43 +603,52 @@ body {
 
 .card.active {
     background: #c2abab;
-    padding:40px 40px 100px 40px;
+    padding: 40px 40px 100px 40px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1500;
 }
-.card.active h3{
-    font-size:48px
+
+.card.active h3 {
+    font-size: 48px
 }
-.card.active h{
+
+.card.active h {
     font-size: 24px;
 }
-.card.active.price{
+
+.card.active.price {
     font-size: 36px;
 }
-.card.active img{
+
+.card.active img {
     width: 1000px;
     height: 1000px;
 }
-.card.active.stars img{
+
+.card.active.stars img {
     max-width: 20px;
     max-height: 20px;
 }
-.card.active .like{
-margin: 20px 60px 80px 0;
+
+.card.active .like {
+    margin: 20px 60px 80px 0;
 }
+
 .overlay.active {
     opacity: 1;
     visibility: visible;
 }
-.card.active .active-link{
+
+.card.active .active-link {
     margin-bottom: 0px;
     width: 1000px;
     font-size: 48px;
-padding: 28px 87px 29px 87px;
+    padding: 28px 87px 29px 87px;
 }
+
 .card img,
 .things img,
 .cards img {
@@ -659,15 +672,16 @@ padding: 28px 87px 29px 87px;
     position: absolute;
     width: 270px;
     color: white;
-    margin-top:calc(-1em - 29px);
+    margin-top: calc(-1em - 29px);
     text-align: center;
     font-size: 16px;
     line-height: 24px;
     border-radius: 4px;
     padding: 8px 87px 9px 87px;
 }
+
 .like {
-    right:30px;
+    right: 30px;
     width: 5px;
     height: 6px;
     font-size: 12px;
@@ -676,7 +690,7 @@ padding: 28px 87px 29px 87px;
     position: absolute;
     padding: 14px 10px;
     border-radius: 4px;
-    
+
 }
 
 .like a {
@@ -689,7 +703,7 @@ padding: 28px 87px 29px 87px;
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-    margin-bottom:8px ;
+    margin-bottom: 8px;
 }
 
 .like a:hover {
@@ -1105,6 +1119,7 @@ padding: 28px 87px 29px 87px;
 
 @media (min-width:768px) and (max-width: 1024px) {
 
+    .body,
     .products,
     .clothes,
     .explore-product,
