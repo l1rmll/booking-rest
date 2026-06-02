@@ -406,6 +406,7 @@ body {
 
 .section-header2 h2,
 .section-header2 h1 {
+    color: #000;
     font-size: 36px;
     line-height: 48px;
     font-weight: 600;
@@ -425,6 +426,13 @@ body {
     border-radius: 4px;
     margin-left: 20px;
     transition: 0.2 ease;
+}
+
+.updown {
+    display: flex;
+    position: absolute;
+    margin-left: 900px;
+    margin-right: 135px;
 }
 
 .button {
@@ -707,6 +715,7 @@ body {
 }
 
 .like a:hover {
+
     background: #db4444;
     transform: scale(1.05);
 }
