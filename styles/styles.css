@@ -431,7 +431,7 @@ body {
 .updown {
     display: flex;
     position: absolute;
-    margin-left: 900px;
+    margin-left: 940px;
     margin-right: 135px;
 }
 
@@ -569,12 +569,15 @@ body {
 }
 
 .circle span {
+    transition: opacity 0.3s;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     cursor: pointer;
 }
-
+.circle span:hover{
+    transform: scale(1.1);
+}
 .circle span.yellow {
     border: 0.2px solid #000;
     background: yellow;
@@ -689,7 +692,7 @@ body {
 }
 
 .like {
-    right: 30px;
+    margin-left: 220px;
     width: 5px;
     height: 6px;
     font-size: 12px;
@@ -854,7 +857,7 @@ body {
     padding: 69px 0 0 56px;
 }
 
-.banner-col-inner h3 {
+.banner-col-inner h2 {
 
     font-weight: 600px;
     font-size: 48px;
@@ -1126,18 +1129,46 @@ body {
     margin-top: 0.9375rem;
 }
 
-@media (min-width:768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 100%;
+    }
 
-    .body,
+    .container {
+        padding: 0 15px;
+    }
+
+    .main-header {
+        margin-left: 20px;
+    }
+
+    .sidebar {
+        margin-left: 20px;
+        width: 200px;
+    }
+
+    .banner {
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .delivery {
+        width: auto;
+        margin: 40px 20px;
+    }
+
     .products,
     .clothes,
     .explore-product,
     .category {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .grid {
@@ -1147,11 +1178,20 @@ body {
     .banner-column {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
     }
 
     .delivery {
         flex-wrap: wrap;
-        gap: 1.875rem;
         justify-content: center;
+        gap: 1rem;
+    }
+
+    .button,
+    .button2,
+    .button3,
+    .button4 {
+        width: auto;
+        padding: 12px 24px;
     }
 }
