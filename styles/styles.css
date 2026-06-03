@@ -155,7 +155,12 @@ body {
     display: flex;
     gap: 48px;
 }
-
+.burger{
+    display: none;
+}
+.tog{
+    display: none;
+}
 .menu a.active-link {
     text-decoration-color: black;
     text-decoration: underline;
@@ -221,7 +226,6 @@ body {
 
 .sidebar {
     width: 217px;
-    height: 344px;
     border-right: 1px solid #eee;
     height: 384px;
     gap: 16px;
@@ -504,12 +508,11 @@ body {
 }
 
 .explore-product {
-    height: 732px;
-    width: 1170px;
+    max-width: 1170px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+
 }
 
 
@@ -781,11 +784,11 @@ body {
 
 .category {
     width: 1170px;
-    height: 313px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 30px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .icon p {
@@ -841,7 +844,6 @@ body {
 
 .banner-column {
     max-width: 1200px;
-    height: 500px;
     margin-left: 135px;
     margin-right: 135px;
     background: #000;
@@ -995,7 +997,6 @@ body {
 
 .delivery {
     width: 943px;
-    height: 161px;
     max-width: 1200px;
     margin: 140px 248px 140px 249px;
     display: flex;
@@ -1007,7 +1008,6 @@ body {
 
 .icons {
     width: 249px;
-    height: 161px;
 }
 
 .icons img {
@@ -1135,12 +1135,59 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
-        width: 100%;
+    width: 100%;
+    overflow-x: hidden;
     }
 
-    .container {
-        padding: 0 15px;
+.top-header,
+.main-header,
+.delivery {
+width: 100%;
+}
+
+.container,
+.header-content {
+max-width: 100%;
+}
+
+.actions,
+.sidebar,
+.containers,
+.main-header {
+margin: 0;
+}
+
+.main {
+flex-direction: column;
+align-items: center;
+}
+
+    .sidebar{ 
+        width: 100%;
+        height: auto;
+        border: none;
     }
+    .sidebar ul{
+        padding-left: 0%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .products,
+    .clothes,
+    .explore-product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    }
+
+    .category {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    }
+ 
 
     .main-header {
         margin-left: 20px;
@@ -1148,7 +1195,7 @@ body {
 
     .sidebar {
         margin-left: 20px;
-        width: 200px;
+        
     }
 
     .banner {
@@ -1156,39 +1203,62 @@ body {
         margin: 20px 0;
         padding: 20px;
     }
-
     .delivery {
         width: auto;
         margin: 40px 20px;
     }
-
+    .menu{
+        display: none;
+    }
     .products,
     .clothes,
-    .explore-product,
-    .category {
+    .explore-product{
+        flex-wrap: wrap;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
-
+    .category{
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+    }
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 
     .grid {
-        flex-direction: column;
+      flex-direction: column;
+        width: auto;
     }
-
+    .big,
+    .wide,
+    .bottomss .cardss{
+        width: 100%;
+        height: auto;
+    }
+    .cards{
+         grid-template-columns: repeat(2, 1fr);
+    }
     .banner-column {
-        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
         text-align: center;
-        padding: 20px;
-    }
+       
 
+    }
+    .banner-column h2{
+    font-size: 24px;
+    }
+    .banner-column img{
+        width: 350px;
+    }
     .delivery {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1rem;
+        gap: 30px;
+        
     }
 
     .button,
@@ -1197,5 +1267,24 @@ body {
     .button4 {
         width: auto;
         padding: 12px 24px;
+    }
+    .menu {
+    flex-direction: column;
+    display: none;
+    gap: 48px;
+    }
+    .tog{
+    display: block;
+    gap:10px;
+    }
+    .burger{
+    display: block;
+    }   
+    .burger img{
+    width: 20px;
+    cursor: pointer;
+    }
+    .tog:checked .menu{
+    display: flex;
     }
 }
