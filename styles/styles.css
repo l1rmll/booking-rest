@@ -155,12 +155,15 @@ body {
     display: flex;
     gap: 48px;
 }
-.burger{
+
+.burger {
     display: none;
 }
-.tog{
+
+.tog {
     display: none;
 }
+
 .menu a.active-link {
     text-decoration-color: black;
     text-decoration: underline;
@@ -244,7 +247,7 @@ body {
     padding: 8px 0;
     cursor: pointer;
     font-size: 15px;
-    transition: 0.3 ease;
+    transition: transform 0.3 ease;
 }
 
 .sidebar li:hover {
@@ -313,7 +316,7 @@ body {
     background: #555;
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.2 ease;
+    transition: color 0.2 ease;
 }
 
 .carusel-dots span.active {
@@ -434,7 +437,7 @@ body {
     cursor: pointer;
     border-radius: 4px;
     margin-left: 20px;
-    transition: 0.2 ease;
+    transition: opacity 0.2 ease;
 }
 
 .updown {
@@ -455,7 +458,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    transition: 0.2 ease;
+    transition: opacity 0.2 ease;
 
 }
 
@@ -482,7 +485,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    transition: 0.2 ease;
+    transition: opacity 0.2 ease;
 }
 
 .button4:hover {
@@ -582,9 +585,11 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
-.circle span:hover{
+
+.circle span:hover {
     transform: scale(1.1);
 }
+
 .circle span.yellow {
     border: 0.2px solid #000;
     background: yellow;
@@ -616,7 +621,7 @@ body {
     background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     visibility: hidden;
-    transition: 0.5s;
+    transition: color 0.5s;
 }
 
 .card.active {
@@ -720,7 +725,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.3s;
+    transition: color 0.3s;
     margin-bottom: 8px;
 }
 
@@ -803,7 +808,7 @@ body {
     text-align: center;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .icon:hover {
@@ -831,7 +836,7 @@ body {
     text-align: center;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 
@@ -911,10 +916,11 @@ body {
     padding: 12px 30px;
     border-radius: 4px;
     cursor: pointer;
+    transition: opacity 0.2 ease;
 }
 
 .button3:hover {
-    transition: 0.2 ease;
+
     transform: scale(1.1);
 }
 
@@ -940,7 +946,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.3s;
 }
 
 .cardss .content {
@@ -1135,156 +1140,231 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
-    width: 100%;
-    overflow-x: hidden;
-    }
-
-.top-header,
-.main-header,
-.delivery {
-width: 100%;
-}
-
-.container,
-.header-content {
-max-width: 100%;
-}
-
-.actions,
-.sidebar,
-.containers,
-.main-header {
-margin: 0;
-}
-
-.main {
-flex-direction: column;
-align-items: center;
-}
-
-    .sidebar{ 
+        margin: 0;
         width: 100%;
-        height: auto;
-        border: none;
+        overflow-x: hidden;
     }
-    .sidebar ul{
-        padding-left: 0%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+
+    .top-header,
+    .main-header,
+    .delivery {
+        width: 100%;
     }
+
+    .top-header p {
+        display: inline;
+        align-items: center;
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container,
+    .header-content {
+        max-width: 100%;
+    }
+
+    .actions,
+    .sidebar,
+    .containers,
+    .main-header {
+        margin: 0;
+    }
+
+
     .products,
     .clothes,
     .explore-product {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
     }
 
     .category {
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
     }
- 
+
 
     .main-header {
         margin-left: 20px;
     }
 
     .sidebar {
-        margin-left: 20px;
-        
+        width: 300px;
     }
 
-    .banner {
-        width: 100%;
-        margin: 20px 0;
-        padding: 20px;
+
+    .banner-col-inner p {
+        width: 90px;
+        height: 20px;
+        color: #00ff66;
+        font-weight: 90;
+        padding: 69px 0 0 56px;
     }
+
+    .banner-col-inner h2 {
+        font-weight: 600px;
+        font-size: 28px;
+        line-height: 60px;
+        text-align: start;
+        margin: 32px 0 20px;
+        padding: 0 0 0 56px;
+    }
+
     .delivery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         width: auto;
         margin: 40px 20px;
     }
-    .menu{
+
+    .delivery h3 {
+        font-size: 14px;
+    }
+
+    .delivery p {
+        font-size: 10px;
+    }
+
+    .menu {
         display: none;
     }
+
     .products,
     .clothes,
-    .explore-product{
+    .explore-product {
         flex-wrap: wrap;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+        margin: 0;
     }
-    .category{
+
+    .main {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 200px 560px
+    }
+
+    .banner {
+        width: 560px;
+        margin: 0;
+    }
+
+    .banner img {
+        margin-right: 10px;
+        width: 300px;
+        gap: 0;
+    }
+
+    .category {
         display: flex;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         justify-items: center;
     }
+
     .footer-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
     }
 
     .grid {
-      flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
         width: auto;
-    }
-    .big,
-    .wide,
-    .bottomss .cardss{
-        width: 100%;
         height: auto;
     }
-    .cards{
-         grid-template-columns: repeat(2, 1fr);
+
+    .grid img {
+        width: 100%;
     }
+
+    .big,
+    .wide {
+        width: 348px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .bottomss .cardss {
+        width: 200%;
+        height: 225px;
+    }
+
+    .icon {
+        width: 200px;
+        height: 150px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .banner-column {
         margin-left: 0;
         width: 100%;
         text-align: center;
-       
+    }
 
-    }
-    .banner-column h2{
-    font-size: 24px;
-    }
-    .banner-column img{
+    .banner-column img {
         width: 350px;
     }
+
     .delivery {
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
-        
+
     }
 
     .button,
     .button2,
-    .button3,
-    .button4 {
+    .button3 {
         width: auto;
         padding: 12px 24px;
+        margin-top: 15px;
     }
+
+    .carusel-dots:hover {
+        transform: scale(1.1);
+    }
+
     .menu {
-    flex-direction: column;
-    display: none;
-    gap: 48px;
+        flex-direction: column;
+        display: none;
+        gap: 10px;
     }
-    .tog{
-    display: block;
-    gap:10px;
+
+    .tog {
+        display: block;
+        gap: 10px;
     }
-    .burger{
-    display: block;
-    }   
-    .burger img{
-    width: 20px;
-    cursor: pointer;
+
+    .burger {
+        display: block;
     }
-    .tog:checked .menu{
-    display: flex;
+
+    .burger img {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    #menu-tog:checked~.menu {
+        display: inline;
+    }
+
+    .updown {
+        margin-left: 600px;
+        padding: auto;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .tog {
+        display: none;
     }
 }
