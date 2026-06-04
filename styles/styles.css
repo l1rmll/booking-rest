@@ -247,7 +247,8 @@ body {
     padding: 8px 0;
     cursor: pointer;
     font-size: 15px;
-    transition: transform 0.3 ease;
+    transition: text-decoration-color 0.3s ease,
+                                color 0.2s;
 }
 
 .sidebar li:hover {
@@ -316,7 +317,8 @@ body {
     background: #555;
     border-radius: 50%;
     cursor: pointer;
-    transition: color 0.2 ease;
+    transition: backround-color 02s ease,
+                    transform 0.2s ease;
 }
 
 .carusel-dots span.active {
@@ -437,7 +439,7 @@ body {
     cursor: pointer;
     border-radius: 4px;
     margin-left: 20px;
-    transition: opacity 0.2 ease;
+    transition: transform 0.2s ease;
 }
 
 .updown {
@@ -458,7 +460,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    transition: opacity 0.2 ease;
+    transition: transform 0.2s ease;
 
 }
 
@@ -469,7 +471,6 @@ body {
 
 .button:hover {
     transform: scale(1.1);
-
 }
 
 .button4 {
@@ -485,7 +486,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    transition: opacity 0.2 ease;
+    transition: transform 0.2s ease;
 }
 
 .button4:hover {
@@ -579,7 +580,7 @@ body {
 }
 
 .circle span {
-    transition: opacity 0.3s;
+    transition: transform 0.3s;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -621,7 +622,6 @@ body {
     background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     visibility: hidden;
-    transition: color 0.5s;
 }
 
 .card.active {
@@ -725,12 +725,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color 0.3s;
+    transition: transform 0.3s, 
+                background 0.2s;
     margin-bottom: 8px;
 }
 
 .like a:hover {
-
     background: #db4444;
     transform: scale(1.05);
 }
@@ -808,7 +808,7 @@ body {
     text-align: center;
     border-radius: 8px;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: transform 0.3s,background 0.2s,color 0.2s;
 }
 
 .icon:hover {
@@ -836,7 +836,7 @@ body {
     text-align: center;
     border-radius: 8px;
     cursor: pointer;
-    transition: color 0.3s;
+    
 }
 
 
@@ -916,11 +916,10 @@ body {
     padding: 12px 30px;
     border-radius: 4px;
     cursor: pointer;
-    transition: opacity 0.2 ease;
+    transition: transform 0.2s ease;
 }
 
 .button3:hover {
-
     transform: scale(1.1);
 }
 
